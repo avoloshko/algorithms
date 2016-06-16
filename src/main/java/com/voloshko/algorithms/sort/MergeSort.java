@@ -3,7 +3,7 @@ package com.voloshko.algorithms.sort;
 /**
  * Merge sort
  * Computational complexity: O(nlogn)
- * Memory: O(n)
+ * Memory: O(2n)
  *
  * @author avoloshko
  */
