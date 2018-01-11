@@ -1,5 +1,5 @@
 # Algorithms
-The reop contains implementations of some popular algorithms.
+The repo contains implementations of some popular algorithms.
 
 ## Cryptography
 * File Digest
