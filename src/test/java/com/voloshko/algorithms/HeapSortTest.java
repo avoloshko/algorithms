@@ -12,26 +12,26 @@ import java.util.Collections;
 import java.util.Random;
 
 public class HeapSortTest extends TestCase {
-	public HeapSortTest(String testName) {
-		super(testName);
-	}
+    public HeapSortTest(String testName) {
+        super(testName);
+    }
 
-	public static Test suite() {
-		return new TestSuite(HeapSortTest.class);
-	}
+    public static Test suite() {
+        return new TestSuite(HeapSortTest.class);
+    }
 
-	public void test() {
-		Integer[] array = new Integer[1000];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = i;
-		}
-		Collections.shuffle(Arrays.asList(array));
+    public void test() {
+        Integer[] array = new Integer[1000];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i;
+        }
+        Collections.shuffle(Arrays.asList(array));
 
-		Integer[] arrayCopy = array.clone();
+        Integer[] arrayCopy = array.clone();
 
-		new HeapSort<Integer>().sort(array);
-		Arrays.sort(arrayCopy);
+        new HeapSort<Integer>().sort(array);
+        Arrays.sort(arrayCopy);
 
-		assert Arrays.equals(arrayCopy, array);
-	}
+        assert Arrays.equals(arrayCopy, array);
+    }
 }
