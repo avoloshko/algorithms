@@ -39,7 +39,6 @@ public class TwoThreeTree<K extends Comparable<K>, V> {
             kvPairLeft = pair;
         }
 
-
         Pair<K, V> kvPairLeft, kvPairRight;
 
         Node nodeLeft, nodeMiddle, nodeRight;
@@ -55,7 +54,6 @@ public class TwoThreeTree<K extends Comparable<K>, V> {
     }
 
     public void remove(K key, V value) {
-
     }
 
     public void get(K key, V value) {
