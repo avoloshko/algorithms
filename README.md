@@ -1,4 +1,4 @@
-# algorithms
+# Algorithms
 
 ## Cryptography
 * File Digest
