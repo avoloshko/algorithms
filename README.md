@@ -1,6 +1,3 @@
-# Algorithms
-The repo contains implementations of some popular algorithms.
-
 ## Cryptography
 * File Digest
 
