@@ -7,6 +7,7 @@ import java.security.DigestException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * Cryptography I (Stanford University) Coursera course
@@ -24,7 +25,11 @@ public class FileDigest {
 
 		try (RandomAccessFile file = new RandomAccessFile(new File(fileName), "r")) {
 			final long length = file.length();
-
+/*
+			HashMap a;
+			a.keySet()
+			Integer s;
+			s.hashCode()*/
 			final int blockSize = 1024;
 
 			long blockEnd = length;
