@@ -1,24 +1,13 @@
 package com.voloshko.algorithms;
 
-import com.voloshko.algorithms.sort.HeapSort;
 import com.voloshko.algorithms.sort.TwoThreeTree;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.TreeMap;
 
-public class TwoThreeTreeTest extends TestCase {
-    public TwoThreeTreeTest(String testName) {
-        super(testName);
-    }
-
-    public static Test suite() {
-        return new TestSuite(TwoThreeTreeTest.class);
-    }
-
+public class TwoThreeTreeTest {
+    @Test
     public void test() {
         TwoThreeTree<Integer, Integer> tree = new TwoThreeTree<>();
 

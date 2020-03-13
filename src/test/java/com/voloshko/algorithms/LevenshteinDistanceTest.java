@@ -1,21 +1,13 @@
 package com.voloshko.algorithms;
 
 import com.voloshko.algorithms.dynamic.LevenshteinDistance;
+import org.junit.jupiter.api.Test;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LevenshteinDistanceTest extends TestCase {
-    public LevenshteinDistanceTest(String testName) {
-        super(testName);
-    }
-
-    public static Test suite() {
-        return new TestSuite(LevenshteinDistanceTest.class);
-    }
-
+public class LevenshteinDistanceTest {
+    @Test
     public void test() {
-        assertTrue(LevenshteinDistance.findDistance("aazzzaaarrryy", "aatzzzbbarryy") == 4);
+        assertEquals(4, LevenshteinDistance.findDistance("aazzzaaarrryy", "aatzzzbbarryy"));
     }
 }

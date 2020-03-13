@@ -1,3 +1,5 @@
 .idea/
 algorithms.iml
 target/
+.gradle/
+build/
