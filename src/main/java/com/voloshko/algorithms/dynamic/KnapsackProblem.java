@@ -52,7 +52,7 @@ public class KnapsackProblem {
     short[] indices = solutionIndices[maxWeight][weights.length];
     int[] result = new int[indices.length];
     for (int i = 0; i < result.length; ++i) {
-        result[i] = indices[i];
+      result[i] = indices[i];
     }
     return result;
   }
