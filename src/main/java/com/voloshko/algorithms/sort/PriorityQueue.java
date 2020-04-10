@@ -23,6 +23,12 @@ public class PriorityQueue<Type extends Comparable<Type>> extends AbstractQueue<
   }
 
   @Override
+  public boolean addAll(Collection<? extends Type> values) {
+    values.forEach(this::add);
+    return true;
+  }
+
+  @Override
   public boolean removeIf(Predicate<? super Type> filter) {
     return false;
   }
